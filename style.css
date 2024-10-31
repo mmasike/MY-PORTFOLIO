@@ -1,0 +1,163 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	background-color: #212227;
+}
+@media screen and (max-width: 478px){
+	ul li a{
+		display: none;
+	}
+	nav{
+		padding: 5px 0;
+	}
+	nav .logo h1{
+		font-size: 25px;
+	}
+	section .main-text{
+		text-align: center;
+		position: relative;
+		bottom: -5rem;
+	}
+	.main-text h2 hr{
+		display: none;
+	}
+	section .main-text h1{
+		font-size: 40px;
+	}
+	section .main-text h3{
+		font-size: 35px;
+		width: 100%;
+		left: 0;
+	}
+	section .main-text h3 br{
+		display: none;
+	}
+	.light{
+		display: none;
+	}
+	section .scroll-social{
+		top: 28rem;
+	}
+	.scroll-social .page, .scroll{
+		display: none;
+	}
+	section .scroll-social .social{
+		flex-direction: row;
+		gap: 5rem;
+		margin-left: 2rem;
+	}
+	section .scroll-social .social svg{
+		width: 5em;
+		height: 3em;
+	}
+}
+nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 10px 50px;
+}
+.logo h1 {
+	font-size: 20px;
+	font-weight: 800;
+	color: #fb650a;
+}
+nav ul {
+	display: flex;
+	justify-content: center;
+}
+nav ul li {
+	padding: 0 20px;
+	list-style-type: none;
+}
+nav ul li a {
+	text-decoration: none;
+	font-size: 17px;
+	font-weight: 400;
+	color: white;
+}
+section .main-text {
+	text-align: center;
+	position: relative;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, 100%);
+	color: white;
+}
+main .light::before {
+	content: "";
+	position: absolute;
+	top: 48%;
+	left: 50%;
+	width: 1200px; /* Adjust width as needed */
+	height: 600px; /* Adjust height as needed */
+	transform: translate(-50%, -50%);
+	background: radial-gradient(
+		circle,
+		rgba(255, 255, 255, 0.2),
+		transparent 60%
+	);
+	z-index: 1; /* Position background behind the text */
+	border-radius: 50%;
+}
+.main-text h2 {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 5rem;
+	font-size: 18px;
+	font-weight: 100;
+	font-style: italic;
+	letter-spacing: 3px;
+}
+.main-text h2 hr {
+	width: 30%;
+	height: 1px;
+	border: 1.5px solid #fb650a;
+}
+.main-text h1 {
+	font-size: 80px;
+	font-family: "Archivo Black", sans-serif;
+	font-style: italic;
+	font-weight: 900;
+	letter-spacing: 3px;
+	z-index: 1;
+}
+.main-text h3 {
+	width: 50%;
+	color: #fb650a;
+	position: relative;
+	left: 42%;
+	letter-spacing: 3px;
+}
+.scroll-social {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	color: white;
+	position: relative;
+	top: 18rem;
+}
+.scroll-social .social {
+	display: flex;
+	flex-direction: column;
+	gap: 0.8rem;
+	padding-left: 15px;
+	cursor: pointer;
+}
+.scroll-social .scroll h1{
+	font-size: 14px;
+	font-weight: 100;
+	font-family: "Archivo Black", sans-serif;
+	color: #7f7f84;
+	display: flex;
+	gap: 1rem;
+	transform: rotate(90deg);
+	cursor: pointer;
+}
+.scroll-social .scroll hr{
+	border: 1px solid #7f7f84;
+	width: 40%;
+	transform: rotate(90deg);
+}
